@@ -64,7 +64,7 @@ screenshots/
 ## Installation
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/1Dragon-0/Miku-theme-Terminal>
 cd kitty-fish-miku
 ./install.sh
 ```
