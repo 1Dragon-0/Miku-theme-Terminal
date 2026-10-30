@@ -1,0 +1,159 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "~/.config/fastfetch/logo.txt",
+        "color": {
+            "1": "38;2;57;197;187"
+        },
+        "padding": {
+            "right": 3
+        }
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m┌──────────────────────────\u001b[38;2;57;197;187mSoftware\u001b[38;2;47;74;96m──────────────────────────┐\u001b[0m"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "title",
+            "key": "│ ├ User",
+            "keyColor": "38;2;57;197;187",
+            "format": "{user-name}",
+            "outputColor": "38;2;225;40;133"
+        },
+        {
+            "type": "title",
+            "key": "│ ├ Host",
+            "keyColor": "38;2;57;197;187",
+            "format": "{host-name}"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├ Kernel",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "bios",
+            "key": "│ ├ BIOS",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖 Packages",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "shell",
+            "key": "│ └ Shell",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m└────────────────────────────────────────────────────────────┘\u001b[0m"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m┌──────────────────────────\u001b[38;2;57;197;187mHardware\u001b[38;2;47;74;96m──────────────────────────┐\u001b[0m"
+        },
+        {
+            "type": "host",
+            "key": " PC",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├ CPU",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍛 GPU",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├󰍛 RAM",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "disk",
+            "key": "│ └ Disk",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m└────────────────────────────────────────────────────────────┘\u001b[0m"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m┌──────────────────────────\u001b[38;2;57;197;187mDesktop\u001b[38;2;47;74;96m───────────────────────────┐\u001b[0m"
+        },
+        {
+            "type": "de",
+            "key": " DE",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "lm",
+            "key": "│ ├ DM",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├ WM",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ ├󰉼 Theme",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "terminal",
+            "key": "│ └ Terminal",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m└────────────────────────────────────────────────────────────┘\u001b[0m"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m┌─────────────────────\u001b[38;2;57;197;187mUptime / Age / DT\u001b[38;2;47;74;96m──────────────────────┐\u001b[0m"
+        },
+        {
+            "type": "command",
+            "key": "│ ├ OS Age",
+            "keyColor": "38;2;57;197;187",
+            "text": "birth=$(stat -c %W / 2>/dev/null || stat -f %B / 2>/dev/null); now=$(date +%s); if [ ${birth:-0} -gt 0 ] 2>/dev/null; then echo $(( (now - birth) / 86400 )) days; else echo unknown; fi"
+        },
+        {
+            "type": "uptime",
+            "key": "│ ├ Uptime",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "datetime",
+            "key": "│ └ DateTime",
+            "keyColor": "38;2;57;197;187"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;47;74;96m└────────────────────────────────────────────────────────────┘\u001b[0m"
+        },
+        "break",
+        {
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        }
+    ]
+}
